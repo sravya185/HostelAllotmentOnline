@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <title>Document</title>
+  <style>
+
+
+#page-header{
+    /* background-image: url("https://th.bing.com/th/id/OIP.m5KcExAdTJ9yG5qfsIdZOAHaCa?pid=ImgDet&rs=1"); */
+    background-image: url("images/banner.png");
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header .about-header h2
+{
+    color : "white";
+}
+#page-header .about-header p{
+    /* color: rgb(18, 15, 15); */
+    color : "white"
+}
+        #contact-details{
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+#contact-details .details{
+    width: 40%;
+}
+#contact-details .details span,
+#contact-details form span{
+    font-size: 12px;
+
+}
+#contact-details .details h2
+#contact-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#contact-details .details h3
+{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+  </style>
+</head>
+<body>
+    <section id="header">
+        <div class="logo">
+            <h3>Hostel <span>Allotment</span></h3>
+          </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a  href="hostels.html">Hostels</a></li>
+                <li><a href="warden.html">Warden</a></li>
+                <li><a href="contact.html"  class="active" >Contact</a></li>   
+            </ul>
+        </div>
+    </section>
+    <section id="page-header" class="about-header">
+        <h2 style="color:white">#Let's_talk</h2><br>
+        <h6 style="color:rgb(77, 210, 210);font-size:16px">LEAVE A MESSAGE.We love to hear from you!</h6>       
+    </section>
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span><br><br>
+            <h3>Visit one of our agency locations or contact us today</h3>
+            <h3>Head Offices</h3>
+            <div>
+                <li>
+                    <i class="fal fa-map"></i>
+                    <p>Kovvada Road , Street 32, Bhimavaram</p>
+                </li>
+                <li>
+                    <i class="far fa-envelope"></i>
+                    <p>svecw@edu.in</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <p>svecw@edu.in</p>
+                </li>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2012.7107273039599!2d81.52274198762453!3d16.569837563127045!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37cd4eb220051d%3A0xea3d7b50d0a1458!2sShri%20Vishnu%20Engineering%20College%20Autonomous!5e0!3m2!1sen!2sin!4v1669467794608!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</body>
+</html>

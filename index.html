@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.box1 {
+    border: 2px outset black;
+    margin: 20px 1000px 10px 250px;
+}
+#buttonstyle{
+    background-color:cadetblue;
+    border-radius:5px;
+    margin:10px;
+    height:28px;
+    width:100px
+}
+.oval {
+    border-radius: 20px;
+    text-align: center;
+    height: 30px;
+}
+.box2 {
+    border: 2px outset black;
+    margin: 20px 250px 10px 250px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+h2 {
+    font-size: 40px;
+    line-height: 54px;
+    color: black;
+}
+h3
+
+{
+    font-size:30px ;
+    line-height: 40px;
+    color:black
+}
+h4 {
+    font-size: 20px;
+    color: black;
+}
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+p {
+    font-size: 16px;
+    color: cadetblue;
+    margin: 15px 0px 20px 0px;
+}
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: #E3E6F3;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2 s;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: #088178;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2 s;
+}
+.section-p1 {
+    padding: 40px 80px;
+}
+body {
+    width: 100%;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #E3E6F6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+#header .logo {
+    font-size: 20px;
+    /* color:royalblue; */
+    margin: 7px 0;
+    /* cursor: pointer; */
+    /* position: relative; */
+    left: -4%;
+  }
+
+#header .logo span {
+    color: #088178;
+    text-decoration: underline;
+    
+  }
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover {
+    color: #088178;
+}
+#navbar li a.active {
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+h2 {
+    font-size: 40px;
+    line-height: 54px;
+    color: black;
+}
+h3
+
+{
+    font-size:30px ;
+    line-height: 40px;
+    color:black
+}
+h4 {
+    font-size: 20px;
+    color: black;
+}
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+p {
+    font-size: 16px;
+    color: cadetblue;
+    margin: 15px 0px 20px 0px;
+}
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: #E3E6F3;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2 s;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: #088178;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2 s;
+}
+.section-p1 {
+    padding: 40px 80px;
+}
+body {
+    width: 100%;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #E3E6F6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+#header .logo {
+    font-size: 20px;
+    /* color:royalblue; */
+    margin: 7px 0;
+    /* cursor: pointer; */
+    /* position: relative; */
+    left: -4%;
+  }
+
+#header .logo span {
+    color: #088178;
+    text-decoration: underline;
+    
+  }
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover {
+    color: #088178;
+}
+#navbar li a.active {
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+#hero {
+    background-image: url(images/hostelroom4.webp);
+    background-size: cover;
+    /* color: black; */
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#hero h4 {
+    padding-bottom: 15px;
+}
+#hero h2 {
+       color:white;
+}
+#hero button{
+    border-radius: 8.5%;
+    border-color: #088178;
+}
+#hero button:hover {
+    background-color: #088178;
+    /* color: aliceblue; */
+}
+
+
+
+/* feauture */
+#feature .fe-box {
+    width: 300px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 9px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.2);
+
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    font-size: 15px;
+
+    padding: 10px;
+    line-height: 1;
+    border-radius: 8px;
+    /* color: #088178; */
+    /* background-color: #fddde4; */
+    color:rgb(239, 249, 251);
+    background-color:#088178 ;
+}
+
+#feature .fe-box img {
+    width: 100%;
+    height:150px;
+    margin-bottom: 10px;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+</style>
+<body>
+    <section id="header">
+        <div class="logo">
+            <h3>Hostel <span>Allotment</span></h3>
+          </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="#feature">Facilities</a></li>
+                <li><a  href="hostels.html">Hostels</a></li>
+                <li><a href="warden.html" >Warden</a></li>
+                <li><a href="contact.html">Contact</a></li>   
+            </ul>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4 style="color: white;">Welcome to</h4>
+        <h2 >Shri Vishnu Engineering </h2>
+        <h2>College for Women</h2>
+        <p style="color:white;size: 15;"><b>A perfect place to chase your dreams...</b></p>
+        <button class="white"><a href="hostels.html" style="text-decoration:none ; color:aliceblue">Book your Bed</a></button>
+    </section>
+
+
+    <section id="feature" class="section-p1">
+      <div class="fe-box">
+          <img src="images/ATM.jpg" alt="">
+          <h6> 24/7 Atm Service</h6>
+      </div>
+      <div class="fe-box">
+          <img src="images/foodcourt.jpg" alt="">
+          <h6>Food Courts</h6>
+      </div>
+      <div class="fe-box">
+          <img src="images/gym.jpg" alt="">
+          <h6>Gym</h6>
+      </div>
+      </div>
+      <div class="fe-box">
+          <img src="images/library.jpg" alt="">
+          <h6>Library</h6>
+      </div>
+      <div class="fe-box">
+          <img src="images/powerbackup.jpg" alt="">
+          <h6>power Backup</h6>
+      </div>
+      <div class="fe-box">
+          <img src="images/wifi.jpg" alt="">
+          <h6>24/7 wifi</h6>
+      </div>
+      <div class="fe-box">
+        <img src="images/swimming.jpeg" alt="">
+        <h6>Swimming</h6>
+    </div>
+    <div class="fe-box">
+        <img src="images/sports.jpeg" alt="">
+        <h6>Sports</h6>
+    </div>
+    
+  </section>
+
+
+
+
+
+</body>
+</html>
